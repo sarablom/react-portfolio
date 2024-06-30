@@ -1,14 +1,11 @@
-import Image from "next/image";
-
-import { SecondaryHeading } from "../SecondaryHeading";
-import { SectionWrapper, ImageWrapper } from "./style";
+import { SecondaryHeading } from "../Headings/SecondaryHeading";
+import { SectionWrapper } from "./style";
+import { SingleWaveBackground } from "../BackgroundImages/SingleWaveBackground";
 
 export const ExperienceSection = () => {
 	return (
 		<SectionWrapper>
-			<ImageWrapper>
-				<Image src="/img/single-wave.svg" alt="" fill={true} />
-			</ImageWrapper>
+			<SingleWaveBackground />
 			<SecondaryHeading title="Erfarenhet" />
 		</SectionWrapper>
 	);

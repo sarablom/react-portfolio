@@ -1,11 +1,11 @@
 "use client";
 import styled from "styled-components";
-import { mono_fett } from "../fonts";
+import { mono_fett } from "../../fonts";
 
 export const StyledMainHeading = styled.h1`
 	font-size: 3rem;
-  text-align: center;
-  line-height: 1;
+	text-align: center;
+	line-height: 1;
 
 	span {
 		display: block;

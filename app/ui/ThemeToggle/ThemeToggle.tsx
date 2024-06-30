@@ -4,12 +4,12 @@ import { ToggleButton } from "./ToggleButton";
 import { Moon, Sun } from "react-feather";
 
 export const ThemeToggle = () => {
-	const { theme, setTheme } = useTheme();
+	const { theme, updateTheme } = useTheme();
 
 	return (
 		<ToggleButton
 			checked={theme === "light"}
-			onClickHandler={() => setTheme(theme === "light" ? "dark" : "light")}
+			onClickHandler={() => updateTheme(theme === "light" ? "dark" : "light")}
 			style={{
 				flexDirection: theme === "light" ? "row" : "row-reverse",
 				justifyContent: theme === "light" ? "flex-end" : "flex-start",

@@ -1,6 +1,6 @@
 import { StyledMainHeading } from "./style";
 
-import { mono_fett } from "../fonts";
+import { mono_fett } from "../../fonts";
 
 export const MainHeading = () => {
 	return (

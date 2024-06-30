@@ -1,4 +1,4 @@
-import { montez } from "../fonts";
+import { montez } from "../../fonts";
 import { StyledSecondaryHeading } from "./style";
 
 export const SecondaryHeading = ({ title }: { title: string }) => {

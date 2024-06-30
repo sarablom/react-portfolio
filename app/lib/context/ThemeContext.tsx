@@ -12,7 +12,7 @@ export type ThemeTypes = "dark" | "light";
 
 type ThemeContextType = {
 	theme: ThemeTypes;
-	setTheme: (theme: ThemeTypes) => void;
+	updateTheme: (theme: ThemeTypes) => void;
 };
 
 const ThemeContext = createContext<ThemeContextType | null>(null);
@@ -36,7 +36,7 @@ export const ThemeProvider = ({ children, initialTheme }: Props) => {
 	}, [theme]);
 
 	return (
-		<ThemeContext.Provider value={{ theme, setTheme }}>
+		<ThemeContext.Provider value={{ theme, updateTheme: setTheme }}>
 			{children}
 		</ThemeContext.Provider>
 	);

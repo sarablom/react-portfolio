@@ -1,4 +1,4 @@
-import { SecondaryHeading } from "../SecondaryHeading";
+import { SecondaryHeading } from "../Headings/SecondaryHeading";
 
 export const ProjectsSection = () => {
 	return (
