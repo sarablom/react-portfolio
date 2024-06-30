@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import { cookies } from "next/headers";
-import { Inter } from "next/font/google";
+import { MuseoModerno } from "next/font/google";
 import "@/app/ui/global.css";
 import { ThemeProvider, ThemeTypes } from "@/app/lib/context/ThemeContext";
 import StyledComponentsRegistry from "@/app/lib/StyledComponentsRegistry";
 
-const inter = Inter({ subsets: ["latin"] });
+const museoModerno = MuseoModerno({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
 	title: "Sara Blom - Frontend Developer",
@@ -24,7 +24,7 @@ export default function RootLayout({
 		<html lang="en">
 			<ThemeProvider initialTheme={theme as ThemeTypes}>
 				<StyledComponentsRegistry>
-					<body className={inter.className}>{children}</body>
+					<body className={museoModerno.className}>{children}</body>
 				</StyledComponentsRegistry>
 			</ThemeProvider>
 		</html>
