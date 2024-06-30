@@ -15,4 +15,5 @@ export const ListWrapper = styled.ol`
 	display: flex;
 	list-style-type: none;
 	gap: 32px;
+  text-transform: uppercase;
 `;
