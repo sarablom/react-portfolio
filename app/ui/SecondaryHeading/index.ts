@@ -1,0 +1,1 @@
+export { SecondaryHeading } from "./SecondaryHeading";

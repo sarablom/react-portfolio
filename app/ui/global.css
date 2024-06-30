@@ -39,8 +39,8 @@ body,
 }
 
 body {
-	--color-text: #4b4b4b;
-	--color-background: #fcfcfc;
+	--color-text: #157124;
+	--color-background: linear-gradient(0deg, #dfdedf 0%, #faf0e6 100%);
 
 	display: flex;
 	flex-direction: column;
@@ -49,11 +49,16 @@ body {
 	line-height: 1.5;
 	-webkit-font-smoothing: antialiased;
 	color: var(--color-text);
-	background-color: var(--color-background);
+	background: var(--color-background);
 }
 
 body.dark {
-	--color-background: #4b4b4b;
+	--color-background: linear-gradient(
+		0deg,
+		#743c93 0%,
+		#2e066b 75%,
+		#0a073e 100%
+	);
 	--color-text: #fcfcfc;
 
 	img,
@@ -74,7 +79,6 @@ main {
 	align-self: center;
 	width: 100%;
 	max-width: 1000px;
-	padding: 2rem 1rem 0 1rem;
 }
 
 img,

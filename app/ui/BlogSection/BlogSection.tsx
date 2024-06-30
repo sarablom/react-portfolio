@@ -1,7 +1,9 @@
+import { SecondaryHeading } from "../SecondaryHeading";
+
 export const BlogSection = () => {
 	return (
 		<section>
-			<h2>Blogg</h2>
+			<SecondaryHeading title="Blogg" />
 		</section>
 	);
 };

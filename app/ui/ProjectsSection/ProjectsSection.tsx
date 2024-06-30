@@ -1,7 +1,9 @@
+import { SecondaryHeading } from "../SecondaryHeading";
+
 export const ProjectsSection = () => {
 	return (
 		<section>
-			<h2>Projekt</h2>
+			<SecondaryHeading title="Projekt" />
 		</section>
 	);
 };
