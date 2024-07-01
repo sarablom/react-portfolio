@@ -2,7 +2,7 @@ import { SecondaryHeading } from "../Headings/SecondaryHeading";
 
 export const ContactSection = () => {
 	return (
-		<section>
+		<section id="contact">
 			<SecondaryHeading title="Kontakt" />
 		</section>
 	);
