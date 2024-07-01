@@ -21,6 +21,7 @@ export const ToggleButton = ({
 			type="button"
 			role="switch"
 			aria-checked={checked}
+      aria-label="Update theme color"
 			onClick={onClickHandler}
 			style={style}
 		>
