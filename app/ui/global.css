@@ -17,7 +17,7 @@
 	--font-size-xxl: clamp(2.14rem, 2.22vw + 1.58rem, 2.8rem);
 	--font-size-xxxl: clamp(2.67rem, 3.28vw + 1.85rem, 4rem);
 
-	--max-width: 100rem;
+	--max-width: 1000px;
 }
 
 *,
@@ -25,7 +25,7 @@
 *::after {
 	box-sizing: border-box;
 }
-* {
+*:not(h2,h3) {
 	margin: 0;
 }
 html,
@@ -74,6 +74,11 @@ body.dark {
 	flex-direction: column;
 }
 
+.content-wrap {
+	max-width: var(--max-width);
+  margin: 0 auto;
+}
+
 main {
 	flex: 1;
 	align-self: center;
@@ -103,9 +108,3 @@ h5,
 h6 {
 	overflow-wrap: break-word;
 }
-
-/* @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-} */
