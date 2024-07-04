@@ -2,13 +2,16 @@
 import Image from "next/image";
 import styled from "styled-components";
 import { useTheme } from "@/app/lib/context/ThemeContext";
-import { SingleWaveSvg } from "../components/SingleWaveSvg";
+import { DoubleWaveSvgv } from "../components/DoubleWaveSvg";
 
-export const SingleWaveBackground = () => {
+export const DoubleWaveBackground = () => {
 	const { theme } = useTheme();
 	return (
 		<ImageWrapper>
-			<SingleWaveSvg fillColor={theme === "dark" ? "#0F0131" : "#30221D"} />
+			<DoubleWaveSvgv
+				fillColorAbove={theme === "dark" ? "#028AE5" : "#E86B24"}
+				fillColorBelow={theme === "dark" ? "#01609F" : "#157124"}
+			/>
 		</ImageWrapper>
 	);
 };

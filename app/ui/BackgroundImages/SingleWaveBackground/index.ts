@@ -1,1 +1,1 @@
-export {SingleWaveBackground} from "./SingleWaveBackground"
+export { SingleWaveBackground } from "./SingleWaveBackground";

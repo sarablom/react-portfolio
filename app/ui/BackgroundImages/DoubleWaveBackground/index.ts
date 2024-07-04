@@ -1,0 +1,1 @@
+export { DoubleWaveBackground } from "./DoubleWaveBackground";
